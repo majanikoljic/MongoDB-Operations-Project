@@ -1,0 +1,56 @@
+# MongoDB-Operations-Project
+
+# MongoDB Operations Project
+
+Welcome to the MongoDB Operations project!
+
+This exercise is designed to provide you with practical experience in managing real-world datasets using MongoDB. We'll work with the MongoDB sample dataset named mflix, which features a variety of movie-related data, including collections such as movies, comments, users, and more.
+
+## Tasks
+
+### Getting Started
+
+1. **Create a MongoDB Account**: Begin by setting up a free MongoDB account. You can find step-by-step instructions in [this article](https://www.mongodb.com/docs/guides/atlas/account/).
+2. **Create a Shared Cluster**: Set up a free shared cluster, a group of servers or instances that store your data. Follow the steps outlined in [this article](https://www.mongodb.com/docs/guides/atlas/cluster/).
+3.  **Add a database user to access your database.** This user is essential for managing database access and security. Learn how to add a user by following [this article](https://www.mongodb.com/docs/guides/atlas/db-user/).
+4. **Configure Network Access:** Add your IP address to connect to MongoDB. Detailed instructions are available in [this article](https://www.mongodb.com/docs/guides/atlas/network-connections/).
+5. **Load Sample Data**: Add data to your cluster by loading the sample dataset. This step is crucial for practicing database operations with real data. Follow the steps in [this article](https://www.mongodb.com/docs/guides/atlas/sample-data/).
+6. **Get Connection String**: Obtain the connection string to connect to the MongoDB cluster. The connection string is a crucial component that enables your application to communicate with the database. You can find how to get this string from [this article](https://www.mongodb.com/docs/guides/atlas/connection-string/).
+
+### Exploring the Database
+
+1. **Download MongoDB Compass**: Download MongoDB Compass, which is the GUI for MongoDB. It is the easiest way to explore and manipulate your data. Explore [the documentation](https://www.mongodb.com/docs/compass/master/), if needed.
+2. **Connect to the Cluster**: Connect MongoDB using the obtained connection string.
+3. **Opening the Database:** Open the `sample_mflix` database to explore collections.
+4. **Explore the Collections**: Explore each collection in the database and try to understand the data structures of stored documents.
+
+### Create
+
+1. **Insert a New Document into the Users Collection**: Practice adding a new user document to the `users` collection. Include fields `name` and `email`.
+
+### Read
+
+1. Find all movies directed by Christopher Nolan.
+2.  Find movies that include the genre "Action" and sort (descending) them by year.
+3. Find movies with an IMDb rating greater than 8 and return only the title and IMDB information.
+4. Find movies that starred both "Tom Hanks" and "Tim Allen".
+5. Find movies that starred both and only "Tom Hanks" and "Tim Allen".
+6. Find comedy movies that are directed by Steven Spielberg.
+
+### Update
+
+1. Add a new field "available_on" with the value "Sflix" to "The Matrix".
+2. Increment the metacritic of "The Matrix" by 1.
+3. Add a new genre "Gen Z" to all movies released in the year 1997.
+4. Increase IMDb rating by 1 for all movies with a rating less than 5.
+
+### Delete
+
+1. Delete a comment with a specific ID.
+2. Delete all comments made for "The Matrix".
+3. Delete all movies that do not have any genres.
+
+### Aggregate
+
+1. Aggregate movies to count how many were released each year and display from the earliest year to the latest.
+2. Calculate the average IMDb rating for movies grouped by director and display from highest to lowest.
